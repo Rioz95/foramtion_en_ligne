@@ -1,250 +1,208 @@
 <!doctype html>
-<html class="no-js" lang="zxx">
-
+<html lang="en" data-bs-theme="auto">
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>
-			EduSaifaire -
-			{% block title %}Bienvenue!
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>SaifaireEduc -
+			{% block title %}
+				Beinvenue !
 			{% endblock %}
 		</title>
-		<meta name="description" content="">
-		<meta
-		name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- <link rel="manifest" href="site.webmanifest"> -->
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-		<!-- Place favicon.ico in the root directory -->
+		{% block stylesheets %}{% endblock %}
 
-		<!-- CSS here -->
-		<link rel="stylesheet" href="/css/bootstrap.min.css"> <link rel="stylesheet" href="css/owl.carousel.min.css">
-		<link rel="stylesheet" href="/css/magnific-popup.css">
-		<link rel="stylesheet" href="/css/font-awesome.min.css">
-		<link rel="stylesheet" href="/css/themify-icons.css">
-		<link rel="stylesheet" href="/css/nice-select.css">
-		<link rel="stylesheet" href="/css/flaticon.css">
-		<link rel="stylesheet" href="/css/gijgo.css">
-		<link rel="stylesheet" href="/css/animate.css">
-		<link rel="stylesheet" href="/css/slicknav.css">
-		<link
-		rel="stylesheet" href="/css/style.css">
-	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
+		<script src="/js/color-modes.js"></script>
+
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+
+
+		<style>
+			.bd-placeholder-img {
+				font-size: 1.125rem;
+				text-anchor: middle;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+			}
+
+			@media(min-width: 768px) {
+				.bd-placeholder-img-lg {
+					font-size: 3.5rem;
+				}
+			}
+
+			.b-example-divider {
+				width: 100%;
+				height: 3rem;
+				background-color: rgba(0, 0, 0, 0.1);
+				border: solid rgba(0, 0, 0, 0.15);
+				border-width: 1px 0;
+				box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+			}
+
+			.b-example-vr {
+				flex-shrink: 0;
+				width: 1.5rem;
+				height: 100vh;
+			}
+
+			.bi {
+				vertical-align: -0.125em;
+				fill: currentColor;
+			}
+
+			.nav-scroller {
+				position: relative;
+				z-index: 2;
+				height: 2.75rem;
+				overflow-y: hidden;
+			}
+
+			.nav-scroller .nav {
+				display: flex;
+				flex-wrap: nowrap;
+				padding-bottom: 1rem;
+				margin-top: -1px;
+				overflow-x: auto;
+				text-align: center;
+				white-space: nowrap;
+				-webkit-overflow-scrolling: touch;
+			}
+
+			.btn-bd-primary {
+				--bd-violet-bg: #712cf9;
+				--bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+				--bs-btn-font-weight: 600;
+				--bs-btn-color: var(--bs-white);
+				--bs-btn-bg: var(--bd-violet-bg);
+				--bs-btn-border-color: var(--bd-violet-bg);
+				--bs-btn-hover-color: var(--bs-white);
+				--bs-btn-hover-bg: #6528e0;
+				--bs-btn-hover-border-color: #6528e0;
+				--bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+				--bs-btn-active-color: var(--bs-btn-hover-color);
+				--bs-btn-active-bg: #5a23c8;
+				--bs-btn-active-border-color: #5a23c8;
+			}
+
+			.bd-mode-toggle {
+				z-index: 1500;
+			}
+
+			.bd-mode-toggle .bi {
+				width: 1em;
+				height: 1em;
+			}
+
+			.bd-mode-toggle .dropdown-menu .active .bi {
+				display: block !important;
+			}
+		</style>
+
+
 	</head>
-
 	<body>
 
-		<!-- header-start -->
-		<header>
-			<div class="header-area ">
-				<div id="sticky-header" class="main-header-area">
-					<div class="container-fluid p-0">
-						<div class="row align-items-center no-gutters">
-							<div class="col-xl-2 col-lg-2">
-								<div class="logo-img">
-									<a href="index.html">
-										<img src="img/logo.png" alt="">
-									</a>
-								</div>
-							</div>
-							<div class="col-xl-7 col-lg-7">
-								<div class="main-menu  d-none d-lg-block">
-									<nav>
-										<ul id="navigation">
-											<li>
-												<a class="active" href="index.html">home</a>
-											</li>
-											<li>
-												<a href="Courses.html">Courses</a>
-											</li>
-											<li>
-												<a href="#">pages
-													<i class="ti-angle-down"></i>
-												</a>
-												<ul class="submenu">
-													<li>
-														<a href="course_details.html">course details</a>
-													</li>
-													<li>
-														<a href="elements.html">elements</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a href="about.html">About</a>
-											</li>
-											<li>
-												<a href="#">blog
-													<i class="ti-angle-down"></i>
-												</a>
-												<ul class="submenu">
-													<li>
-														<a href="blog.html">blog</a>
-													</li>
-													<li>
-														<a href="single-blog.html">single-blog</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a href="contact.html">Contact</a>
-											</li>
-										</ul>
-									</nav>
-								</div>
-							</div>
-							<div class="col-xl-3 col-lg-3 d-none d-lg-block">
-								<div class="log_chat_area d-flex align-items-center">
-									<a href="#test-form" class="login popup-with-form">
-										<i class="flaticon-user"></i>
-										<span>log in</span>
-									</a>
-									<div class="live_chat_btn">
-										<a class="boxed_btn_orange" href="#">
-											<i class="fa fa-phone"></i>
-											<span>+10 378 467 3672</span>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="mobile_menu d-block d-lg-none"></div>
-							</div>
+		<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+			<button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+				<svg class="bi my-1 theme-icon-active" aria-hidden="true">
+					<use href="#circle-half"></use>
+				</svg>
+				<span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+			</button>
+			<ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+				<li>
+					<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+						<svg class="bi me-2 opacity-50" aria-hidden="true">
+							<use href="#sun-fill"></use>
+						</svg>
+						Light
+						<svg class="bi ms-auto d-none" aria-hidden="true">
+							<use href="#check2"></use>
+						</svg>
+					</button>
+				</li>
+				<li>
+					<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+						<svg class="bi me-2 opacity-50" aria-hidden="true">
+							<use href="#moon-stars-fill"></use>
+						</svg>
+						Dark
+						<svg class="bi ms-auto d-none" aria-hidden="true">
+							<use href="#check2"></use>
+						</svg>
+					</button>
+				</li>
+				<li>
+					<button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+						<svg class="bi me-2 opacity-50" aria-hidden="true">
+							<use href="#circle-half"></use>
+						</svg>
+						Auto
+						<svg class="bi ms-auto d-none" aria-hidden="true">
+							<use href="#check2"></use>
+						</svg>
+					</button>
+				</li>
+			</ul>
+
+		</div>
+
+
+		<header data-bs-theme="dark">
+			<div class="collapse text-bg-dark" id="navbarHeader">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 col-md-7 py-4">
+							<h4>A propos</h4>
+							<p class="text-body-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt non veniam modi ullam, magni inventore voluptatum distinctio explicabo exercitationem.</p>
+						</div>
+						<div class="col-sm-4 offset-md-1 py-4">
+							<h4>Contact</h4>
+							<ul class="list-unstyled">
+								<li>
+									<a href="#" class="text-white">Suivez-nous sur X</a>
+								</li>
+								<li>
+									<a href="#" class="text-white">Suivez-nous sur Facebook</a>
+								</li>
+								<li>
+									<a href="#" class="text-white">Envoyer un e-mail</a>
+								</li>
+							</ul>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="navbar navbar-dark bg-dark shadow-sm">
+				<div class="container">
+					<a href="#" class="navbar-brand d-flex align-items-center">
+						<strong>SaifaireEduc</strong>
+					</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 				</div>
 			</div>
 		</header>
-		<!-- header-end -->
 
 		{% block body %}{% endblock %}
 
-		<!-- footer -->
-		<footer class="footer footer_bg_1">
-			<div class="footer_top">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-4 col-md-6 col-lg-4">
-							<div class="footer_widget">
-								<div class="footer_logo">
-									<a href="#">
-										<img src="img/logo.png" alt="">
-									</a>
-								</div>
-								<p>
-									Firmament morning sixth subdue darkness creeping gathered divide our let god moving.
-																																																																																																																																																																																																																																																																														                                Moving in fourth air night bring upon it beast let you dominion likeness open place day
-																																																																																																																																																																																																																																																																														                                great.
-								</p>
-								<div class="socail_links">
-									<ul>
-										<li><a href="#"><i class="ti-facebook"></i></a></li>
-										<li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-										<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-									</ul>
-								</div>
-
-							</div>
-						</div>
-						<div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3">
-							<div class="footer_widget">
-								<h3 class="footer_title">
-									Courses
-								</h3>
-								<ul>
-									<li><a href="#">Wordpress</a></li>
-									<li><a href="#">Photoshop</a></li>
-									<li><a href="#">Illustrator</a></li>
-									<li><a href="#">Adobe XD</a></li>
-									<li><a href="#">UI/UX</a></li>
-								</ul>
-
-							</div>
-						</div>
-						<div class="col-xl-2 col-md-6 col-lg-2">
-							<div class="footer_widget">
-								<h3 class="footer_title">
-									Resourches
-								</h3>
-								<ul>
-									<li><a href="#">Free Adobe XD</a></li>
-									<li><a href="#">Tutorials</a></li>
-									<li><a href="#">About</a></li>
-									<li><a href="#">About</a></li>
-									<li><a href="#">Contact</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-xl-3 col-md-6 col-lg-3">
-							<div class="footer_widget">
-								<h3 class="footer_title">
-									Address
-								</h3>
-								<p>
-									200, D-block, Green lane USA
-									<br>
-									+10 367 467 8934
-									<br>
-									edumark@contact.com
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="copy-right_text">
-				<div class="container">
-					<div class="footer_border"></div>
-					<div class="row">
-						<div class="col-xl-12">
-							<p
-								class="copy_right text-center">
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								Copyright &copy;<script>
-									document.write(new Date().getFullYear());
-								</script>
-								All rights reserved | This template is made with
-								<i class="fa fa-heart-o" aria-hidden="true"></i>
-								by
-								<a href="https://colorlib.com" target="_blank">Colorlib</a>
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							</p>
-						</div>
-					</div>
-				</div>
+		<footer class="text-body-secondary py-5">
+			<div class="container">
+				<p class="float-end mb-1">
+					<a href="#">Retour en haut</a>
+				</p>
+				<p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+				<p class="mb-0">New to Bootstrap?
+					<a href="/">Visit the homepage</a>
+					or read our
+				</p>
 			</div>
 		</footer>
-		<!-- footer -->
+		<script defer src="/js/bootstrap.bundle.min.js"></script>
+		{% block javascripts %}{% endblock %}
 
-		<!-- JS here -->
-		<script src="/js/vendor/modernizr-3.5.0.min.js"></script>
-		<script src="/js/vendor/jquery-1.12.4.min.js"></script>
-		<script src="//js/popper.min.js"></script>
-		<script src="/js/bootstrap.min.js"></script>
-		<script src="/js/owl.carousel.min.js"></script>
-		<script src="/js/isotope.pkgd.min.js"></script>
-		<script src="/js/ajax-form.js"></script>
-		<script src="/js/waypoints.min.js"></script>
-		<script src="/js/jquery.counterup.min.js"></script>
-		<script src="/js/imagesloaded.pkgd.min.js"></script>
-		<script src="/js/scrollIt.js"></script>
-		<script src="/js/jquery.scrollUp.min.js"></script>
-		<script src="/js/wow.min.js"></script>
-		<script src="/js/nice-select.min.js"></script>
-		<script src="/js/jquery.slicknav.min.js"></script>
-		<script src="/js/jquery.magnific-popup.min.js"></script>
-		<script src="/js/plugins.js"></script>
-		<script src="/js/gijgo.min.js"></script>
-
-		<!--contact js-->
-		<script src="/js/contact.js"></script>
-		<script src="/js/jquery.ajaxchimp.min.js"></script>
-		<script src="/js/jquery.form.js"></script>
-		<script src="/js/jquery.validate.min.js"></script>
-		<script src="/js/mail-script.js"></script>
-
-		<script src="/js/main.js"></script>
 	</body>
-
 </html>

@@ -1,0 +1,44 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Gestion Cyles
+{% endblock %}
+
+{% block body %}
+	<div class="container my-5">
+		<h1 class="text-black text-center">LISTE DES CYCLES</h1>
+		<a href="{{path('admin_cycle_new')}}" class="btn btn-primary">
+			<i class="fa-solid fa-plus"></i>AJouter Cycle
+		</a>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th class="text-center" scope="col">Id</th>
+					<th class="text-center" scope="col">Name</th>
+					<th class="text-center" scope="col">Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for cycle in cycles %}
+					<tr>
+						<td class="text-center">{{cycle.id}}</td>
+						<td class="text-center">{{cycle.name}}</td>
+						<td class="text-center">
+							<a class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalSimple" data-titre="Suppression d'un cycle" data-message="Ete vous sur de supprimer le cycle '{{cycle.name}}'" data-libelleboutton="Supprimer le cycle" data-lien="{{path('admin_cycle_delete', {'id': cycle.id})}}">
+								<i class="fas fa-trash"></i>
+							</a>
+							<a href="{{path('admin_cycle_edit', {'id': cycle.id})}}" class="btn btn-primary">
+								<i class="fa-solid fa-pen"></i>
+							</a>
+						</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+
+{% endblock %}
+
+{% block javascripts %}
+	{% include "admin/include/_modal.html.twig" %}
+{% endblock %}
